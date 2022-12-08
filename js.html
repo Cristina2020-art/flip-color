@@ -1,0 +1,15 @@
+let result = document.getElementById('result');
+let body = document.body;
+let button = document.getElementById('colour');
+button.onclick=function(){
+     let i=0;
+     let hexa = '#';
+     array = [1,2,3,5,4,6,7,'a','f','e','t','s','h','f']
+     let random;
+     for(i=0;i<6;i++){
+          random = Math.floor(Math.random()*array.length);
+          hexa = hexa + array[random];
+     }
+     result.innerHTML=hexa;
+     body.style.backgroundColor=hexa;
+}
